@@ -1,0 +1,183 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:switches
+LIBS:relays
+LIBS:motors
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 2
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Sheet
+S 1560 1950 840  330 
+U 5A63207A
+F0 "Orig555" 60
+F1 "Orig555.sch" 60
+F2 "LampOut" I L 1560 2130 60 
+$EndSheet
+$Comp
+L +12V #PWR?
+U 1 1 5A6320CA
+P 1640 1010
+F 0 "#PWR?" H 1640 860 50  0001 C CNN
+F 1 "+12V" H 1640 1150 50  0000 C CNN
+F 2 "" H 1640 1010 50  0001 C CNN
+F 3 "" H 1640 1010 50  0001 C CNN
+	1    1640 1010
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 5A6321ED
+P 620 1420
+F 0 "#PWR?" H 620 1170 50  0001 C CNN
+F 1 "GND" H 620 1270 50  0000 C CNN
+F 2 "" H 620 1420 50  0001 C CNN
+F 3 "" H 620 1420 50  0001 C CNN
+	1    620  1420
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1090 1200 1190 1200
+Wire Wire Line
+	1190 1200 1640 1200
+Wire Wire Line
+	1640 1200 1940 1200
+Wire Wire Line
+	1640 1200 1640 1010
+$Comp
+L VCC #PWR?
+U 1 1 5A632228
+P 1940 1000
+F 0 "#PWR?" H 1940 850 50  0001 C CNN
+F 1 "VCC" H 1940 1150 50  0000 C CNN
+F 2 "" H 1940 1000 50  0001 C CNN
+F 3 "" H 1940 1000 50  0001 C CNN
+	1    1940 1000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1940 1200 1940 1000
+Connection ~ 1640 1200
+$Comp
+L VCC #PWR?
+U 1 1 5A632252
+P 2280 1000
+F 0 "#PWR?" H 2280 850 50  0001 C CNN
+F 1 "VCC" H 2280 1150 50  0000 C CNN
+F 2 "" H 2280 1000 50  0001 C CNN
+F 3 "" H 2280 1000 50  0001 C CNN
+	1    2280 1000
+	1    0    0    -1  
+$EndComp
+$Comp
+L PWR_FLAG #FLG?
+U 1 1 5A632268
+P 2600 1000
+F 0 "#FLG?" H 2600 1075 50  0001 C CNN
+F 1 "PWR_FLAG" H 2600 1150 50  0000 C CNN
+F 2 "" H 2600 1000 50  0001 C CNN
+F 3 "" H 2600 1000 50  0001 C CNN
+	1    2600 1000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2280 1000 2280 1140
+Wire Wire Line
+	2280 1140 2600 1140
+Wire Wire Line
+	2600 1140 2600 1000
+$Comp
+L PWR_FLAG #FLG?
+U 1 1 5A632291
+P 3070 1000
+F 0 "#FLG?" H 3070 1075 50  0001 C CNN
+F 1 "PWR_FLAG" H 3070 1150 50  0000 C CNN
+F 2 "" H 3070 1000 50  0001 C CNN
+F 3 "" H 3070 1000 50  0001 C CNN
+	1    3070 1000
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 5A63229F
+P 3070 1100
+F 0 "#PWR?" H 3070 850 50  0001 C CNN
+F 1 "GND" H 3070 950 50  0000 C CNN
+F 2 "" H 3070 1100 50  0001 C CNN
+F 3 "" H 3070 1100 50  0001 C CNN
+	1    3070 1100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3070 1000 3070 1100
+$Comp
+L Conn_01x04 J?
+U 1 1 5A63420E
+P 890 1300
+F 0 "J?" H 890 1500 50  0000 C CNN
+F 1 "Conn_01x04" H 890 1000 50  0000 C CNN
+F 2 "" H 890 1300 50  0001 C CNN
+F 3 "" H 890 1300 50  0001 C CNN
+	1    890  1300
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1190 1200 1190 1200
+Wire Wire Line
+	1190 1200 1190 1300
+Wire Wire Line
+	1190 1300 1090 1300
+Connection ~ 1190 1200
+Wire Wire Line
+	1090 1100 1280 1100
+Wire Wire Line
+	1280 1100 1280 830 
+Wire Wire Line
+	1280 830  620  830 
+Wire Wire Line
+	620  830  620  1420
+Wire Wire Line
+	1090 1400 1190 1400
+Wire Wire Line
+	1190 1400 1190 2130
+Wire Wire Line
+	1190 2130 1560 2130
+$EndSCHEMATC
