@@ -24,7 +24,13 @@ def connect():
   print("*****Connection successful*****")
   print(station.ifconfig())
   
+def is_connected():
+  """Check there is a network connection"""
+  sta_if = network.WLAN(network.STA_IF)
+  return sta_if.isconnected()
   
+def get_ifconfig():
+  """Get the ifconfig"""
+  sta_if = network.WLAN(network.STA_IF)
+  return sta_if.ifconfig()
   
-
-
