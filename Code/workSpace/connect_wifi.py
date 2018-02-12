@@ -34,3 +34,7 @@ def get_ifconfig():
   sta_if = network.WLAN(network.STA_IF)
   return sta_if.ifconfig()
   
+def get_IPaddress():
+  """Get the allocated IP address"""
+  config = get_ifconfig()
+  return config[0]
