@@ -1,6 +1,5 @@
 import ure
 
-
 morse_trans = {
 'a':[0,1],
 'b':[1,0,0,0],
@@ -43,3 +42,10 @@ morse_trans = {
 def validate_input(response):
   return ure.match("^[a-zA-Z0-9]+$", response)
   
+def get_morse_char(character):
+  char = character.lower()
+  if char not in morse_trans:
+    return None
+   
+  return morse_trans[char]
+   
